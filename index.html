@@ -109,7 +109,21 @@
   transform: scale(1.1);
 }
 
+/* added animation from here FMCG*/
+@keyframes fmcgSlide {
+                0%, 45% {
+                    background-image: url('images/project8.png');
+                }
 
+                50%, 95% {
+                    background-image: url('images/project8.1.png');
+                }
+
+                100% {
+                    background-image: url('images/project8.png');
+                }
+           			 }
+/* added animation till here FMCG*/
 </style>
 
 
@@ -494,8 +508,12 @@
 			<!-- From here to add new project-->
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/Tamang-Ajay/FMCG-Sales-Reporting-and-Performance-Monitoring-System-Excel-Project" class="block-20 zoom-effect" style="background-image: url('images/project8.png');">
-				</a>
+				<!-- This is replaced line <a href="https://github.com/Tamang-Ajay/FMCG-Sales-Reporting-and-Performance-Monitoring-System-Excel-Project" class="block-20 zoom-effect" style="background-image: url('images/project8.png');">
+				</a> -->
+				<!--Added line from here (Note addedline: animation: fmcgSlide 6s infinite;) -->
+				<a href="https://github.com/Tamang-Ajay/FMCG-Sales-Reporting-and-Performance-Monitoring-System-Excel-Project" class="block-20 zoom-effect" style="background-image: url('images/project8.png'); animation: fmcgSlide 6s infinite;">
+				</a> <!--Added line till here-->
+			    <!-- The CSS is added at above Style-->
 				<div class="text mt-3 float-right d-block">
   
 				  <h3 class="heading"><a href="https://github.com/Tamang-Ajay/FMCG-Sales-Reporting-and-Performance-Monitoring-System-Excel-Project">FMCG Sales Reporting & Performance Monitoring System (Excel)</a></h3>
